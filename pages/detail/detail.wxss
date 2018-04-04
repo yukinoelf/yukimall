@@ -1,0 +1,6 @@
+/* pages/detail/detail.wxss */
+.good-container {
+  display: flex;
+  margin: 50rpx;
+  flex-direction:column;
+}

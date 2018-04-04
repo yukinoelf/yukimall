@@ -1,0 +1,18 @@
+<!--pages/homePage/homePage.wxml-->
+<swiper style="height: 375rpx;" indicator-dots="{{indicatorDots}}" indicatorColor="black" indicatorActiveColor="white" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">   
+   <swiper-item>   
+     <image src="{{item}}" model="aspectFit" style="width: {{imageWidth}}px;" />
+   </swiper-item>   
+  </block>   
+</swiper>
+<view class="goods-container">
+    <view class="goods-box" wx:for="{{ goodsList }}">
+        <navigator url="../detail/detail?id={{ item.id }}">
+            <image src="{{ item.cover }}"
+                class="goods-box-image">
+            </image>
+            <text>{{ item.name }} ￥{{ item.price }}</text>
+        </navigator>
+    </view>
+</view>

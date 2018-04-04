@@ -1,0 +1,15 @@
+<!--pages/shopCart/shopCart.wxml-->
+<view class='goods-list'>
+  <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+    <view class="content">
+      <image class="content-image" src='{{item.cover}}'></image>
+      <view  style='width:150rpx'>{{item.name}}</view>
+      <view>{{item.price}}元</view>
+    </view>
+    <view class="del" catchtap="del" data-index="{{index}}">删除</view>
+  </view>
+</view>
+<view class="toPrice">
+  <view class='price'>共计{{totalPrice}}元</view>
+  <view class='counter'>结算</view>
+</view>

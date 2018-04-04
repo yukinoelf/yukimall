@@ -1,0 +1,10 @@
+<!--pages/detail/detail.wxml-->
+<view class="good-container">
+  <view wx:for="{{ good.picture }}">
+    <image src="{{ item }}"></image>
+  </view>
+  <text>{{ good.name }}</text>
+  <text>￥{{ good.price }}</text>
+  <text>{{ good.discription }}</text>
+  <button type="primary" bindtap="addShopCart"> {{addFlag? "移出购物车":"加入购物车"}}</button>
+</view>

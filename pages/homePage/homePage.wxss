@@ -1,0 +1,20 @@
+/* pages/homePage/homePage.wxss */
+.goods-container {
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+}
+
+.goods-box {
+  width: 339rpx;
+  height: 420rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.goods-box-image {
+   width: 339rpx;
+   height: 339rpx;
+}
